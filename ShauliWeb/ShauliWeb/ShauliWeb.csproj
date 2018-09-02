@@ -18,4 +18,8 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\intro_shauli.png" />
+  </ItemGroup>
+
 </Project>
