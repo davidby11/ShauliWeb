@@ -2,6 +2,10 @@
 =BASIC SETUP
 ------------------------------*/
 
+.container {
+    width: 1000px;
+}
+
 /* Makeshift CSS Reset */
 * {
 	margin: 0;
@@ -15,8 +19,8 @@ header, footer, section, aside, nav, article {
 
 body {
 	margin: 0 auto;
-	padding: 22px 0;
-	width: 940px;
+	/*padding: 22px 0;
+	width: 940px;*/
 	font: 13px/22px Helvetica, Arial, sans-serif;
 	background: #F0F0F0;
 }
@@ -42,12 +46,12 @@ p {
 /*------------------------------
 =NAVIGATION
 ------------------------------*/
-
 nav {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	background: url("images/nav_background.png");
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: url("/images/nav_background.png");
+    background-repeat: repeat-x;/*!!!!!!!*/
 }
 
 	nav ul {
@@ -78,13 +82,15 @@ nav {
 			nav ul li.selected a {
 				color: #fff;
 			}
-			
-			nav ul li.subscribe a {
-				margin-left: 22px;
-				padding-left: 33px;
-				text-align: left;
-				background: url("images/rss.png") left center no-repeat;
-			}
+
+            nav ul li.subscribe a {
+                margin-left: 33px;
+                padding-left: 33px;
+                width: 100%;
+                text-align: left;
+                background: url("/images/rss.png") left center no-repeat;
+                
+            }
 
 
 /*------------------------------
@@ -92,20 +98,19 @@ nav {
 ------------------------------*/
 
 #intro {
-	position: relative;
-	margin-top: 66px;
-	padding: 44px;
-	background: #467612 url("images/intro_background.png") repeat-x;
-	
-	/* Background-size not implemented yet */
-	-webkit-background-size: 100%;
-	-o-background-size: 100%;
-	-khtml-background-size: 100%;
+    position: relative;
+    margin-top: 66px;
+    padding: 30px;
+    background-image: url("/images/intro_background.png");
+    background-repeat: repeat-x;
 
-	
-	/* Border-radius not implemented yet */
-	-moz-border-radius: 22px;
-	-webkit-border-radius: 22px;
+    /* Background-size not implemented yet */
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    -khtml-background-size: 100%;
+    /* Border-radius not implemented yet */
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
 }
 
 	#intro h2, #intro p {
@@ -155,7 +160,8 @@ nav {
 	aside {
 		display: table-cell;
 		width: 300px;
-		background: url("images/sidebar_background.png") top left;
+		background: url("/images/sidebar_background.png") top left;
+        background-repeat: repeat-y;/*!!!!!!!*/
 	}
 
 
@@ -165,7 +171,8 @@ nav {
 aside section {
 	margin: 22px 0 0 22px;
 	padding: 11px 22px;
-	background: url("images/sidebar_section_background.png") repeat-x;
+	background: url("/images/sidebar_section_background.png");
+    background-repeat: repeat-x;/*!!!!!!!*/
 	
 	/* Border-radius not implemented yet */
 	-moz-border-radius: 11px;

@@ -9,3 +9,14 @@ C:\Users\david\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcorea
 C:\Users\david\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcoreapp1.1\ShauliWeb.AssemblyInfo.cs
 C:\Users\david\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcoreapp1.1\ShauliWeb.dll
 C:\Users\david\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcoreapp1.1\ShauliWeb.pdb
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\bin\Debug\netcoreapp1.1\ShauliWeb.deps.json
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\bin\Debug\netcoreapp1.1\ShauliWeb.runtimeconfig.json
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\bin\Debug\netcoreapp1.1\ShauliWeb.runtimeconfig.dev.json
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\bin\Debug\netcoreapp1.1\ShauliWeb.dll
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\bin\Debug\netcoreapp1.1\ShauliWeb.pdb
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcoreapp1.1\ShauliWeb.csprojAssemblyReference.cache
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcoreapp1.1\ShauliWeb.csproj.CoreCompileInputs.cache
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcoreapp1.1\ShauliWeb.AssemblyInfoInputs.cache
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcoreapp1.1\ShauliWeb.AssemblyInfo.cs
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcoreapp1.1\ShauliWeb.dll
+C:\Users\mina.goldfar\Documents\GitHub\ShauliWeb\ShauliWeb\ShauliWeb\ShauliWeb\obj\Debug\netcoreapp1.1\ShauliWeb.pdb
