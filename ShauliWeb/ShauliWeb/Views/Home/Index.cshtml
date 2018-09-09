@@ -1,5 +1,7 @@
-﻿@{
+﻿@model ShauliWeb.Models.Comment
+@{
     ViewData["Title"] = "Home Page";
+
 }
 
 <section id="intro">
@@ -56,26 +58,138 @@
 
 
         </section>
-        <form action="#" method="post">
+
+
+
+
+        @*<form asp-action="Create">
             <h3>Post a comment</h3>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <p>
-                <label for="name">Name</label>
-                <input name="name" id="name" type="text" required />
+                <div class="form-group">
+                    <label asp-for="WriterName" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="WriterName" class="form-control" />
+                        <span asp-validation-for="WriterName" class="text-danger"></span>
+                    </div>
+                </div>
             </p>
             <p>
-                <label for="email">E-mail</label>
-                <input name="email" id="email" type="email" required />
+                <div class="form-group">
+                    <label asp-for="URL" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="URL" class="form-control" />
+                        <span asp-validation-for="URL" class="text-danger"></span>
+                    </div>
+                </div>
             </p>
             <p>
-                <label for="website">Website</label>
-                <input name="website" id="website" type="url" />
+                <div class="form-group">
+                    <label asp-for="URL" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="URL" class="form-control" />
+                        <span asp-validation-for="URL" class="text-danger"></span>
+                    </div>
+                </div>
             </p>
             <p>
-                <label for="comment">Comment</label>
-                <textarea name="comment" id="comment" required></textarea>
+                <div class="form-group">
+                    <label asp-for="Content" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Content" class="form-control" />
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                    </div>
+                </div>
             </p>
-            <p><input type="submit" value="Post comment" /></p>
+            <p>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+            </p>
+
         </form>
+
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }*@
+
+        <h2>Create</h2>
+
+        <form asp-action="Create">
+            <div class="form-horizontal">
+                <h4>Comment</h4>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="CommentTitle" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="CommentTitle" class="form-control" />
+                        <span asp-validation-for="CommentTitle" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="WriterName" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="WriterName" class="form-control" />
+                        <span asp-validation-for="WriterName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="URL" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="URL" class="form-control" />
+                        <span asp-validation-for="URL" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Content" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Content" class="form-control" />
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Date" class="col-md-2 control-label"></label>
+                    <div class="col-md-10">
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
     <aside>
         <section>
