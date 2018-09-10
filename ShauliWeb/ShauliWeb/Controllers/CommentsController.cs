@@ -53,7 +53,7 @@ namespace ShauliWeb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CommentID,CommentTitle,WriterName,URL,Content,Date")] Comment comment)
+        public async Task<IActionResult> Create([Bind("CommentID,Name,Email,Website,CommentText,Date")] Comment comment)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace ShauliWeb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CommentID,CommentTitle,WriterName,URL,Content,Date")] Comment comment)
+        public async Task<IActionResult> Edit(int id, [Bind("CommentID,Name,Email,Website,CommentText,Date")] Comment comment)
         {
             if (id != comment.CommentID)
             {

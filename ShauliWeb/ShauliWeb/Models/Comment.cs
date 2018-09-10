@@ -8,10 +8,10 @@ namespace ShauliWeb.Models
     public class Comment
     {
         public int CommentID { get; set; }
-        public string CommentTitle { get; set; }
-        public string WriterName { get; set; }
-        public string URL { get; set; }
-        public string Content { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Website { get; set; }
+        public string CommentText { get; set; }
         private DateTime _date = DateTime.Now;
         public DateTime Date
         {

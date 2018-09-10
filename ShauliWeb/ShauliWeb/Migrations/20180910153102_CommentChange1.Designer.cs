@@ -8,9 +8,10 @@ using ShauliWeb.Models;
 namespace ShauliWeb.Migrations
 {
     [DbContext(typeof(ShauliWebContext))]
-    partial class ShauliWebContextModelSnapshot : ModelSnapshot
+    [Migration("20180910153102_CommentChange1")]
+    partial class CommentChange1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.5")
@@ -21,15 +22,13 @@ namespace ShauliWeb.Migrations
                     b.Property<int>("CommentID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("CommentText");
+                    b.Property<string>("Content");
 
                     b.Property<DateTime>("Date");
 
-                    b.Property<string>("Email");
-
                     b.Property<string>("Name");
 
-                    b.Property<string>("Website");
+                    b.Property<string>("URL");
 
                     b.HasKey("CommentID");
 

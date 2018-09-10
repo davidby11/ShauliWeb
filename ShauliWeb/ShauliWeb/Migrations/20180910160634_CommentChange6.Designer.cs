@@ -8,9 +8,10 @@ using ShauliWeb.Models;
 namespace ShauliWeb.Migrations
 {
     [DbContext(typeof(ShauliWebContext))]
-    partial class ShauliWebContextModelSnapshot : ModelSnapshot
+    [Migration("20180910160634_CommentChange6")]
+    partial class CommentChange6
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.5")

@@ -12,38 +12,31 @@
         <hr />
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group">
-            <label asp-for="CommentTitle" class="col-md-2 control-label"></label>
+            <label asp-for="Name" class="col-md-2 control-label"></label>
             <div class="col-md-10">
-                <input asp-for="CommentTitle" class="form-control" />
-                <span asp-validation-for="CommentTitle" class="text-danger"></span>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="WriterName" class="col-md-2 control-label"></label>
+            <label asp-for="Email" class="col-md-2 control-label"></label>
             <div class="col-md-10">
-                <input asp-for="WriterName" class="form-control" />
-                <span asp-validation-for="WriterName" class="text-danger"></span>
+                <input type="email" asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="URL" class="col-md-2 control-label"></label>
+            <label asp-for="Website" class="col-md-2 control-label"></label>
             <div class="col-md-10">
-                <input asp-for="URL" class="form-control" />
-                <span asp-validation-for="URL" class="text-danger"></span>
+                <input type="url" asp-for="Website" class="form-control" />
+                <span asp-validation-for="Website" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="Content" class="col-md-2 control-label"></label>
+            <label asp-for="CommentText" class="col-md-2 control-label"></label>
             <div class="col-md-10">
-                <input asp-for="Content" class="form-control" />
-                <span asp-validation-for="Content" class="text-danger"></span>
-            </div>
-        </div>
-        <div class="form-group">
-            <label asp-for="Date" class="col-md-2 control-label"></label>
-            <div class="col-md-10">
-                <input asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger"></span>
+                <input asp-for="CommentText" class="form-control" />
+                <span asp-validation-for="CommentText" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
